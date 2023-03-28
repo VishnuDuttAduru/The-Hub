@@ -1,0 +1,16 @@
+.media{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 10px 0;
+    border: 1px solid white;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    font-family: sans-serif;
+    background: linear-gradient(90deg, black, #07235c, #2d507b);
+}
+.media :hover{
+    background-color: black;
+    color: white;
+}
