@@ -17,6 +17,7 @@ export default function SimpleBottomNavigation() {
         else if(value === 1) navigate('/movies')
         else if(value === 2) navigate('/series')
         else if(value === 3) navigate('/search')
+      // eslint-disable-next-line
     },[value,navigate])
   return (
     <Box sx={{ 

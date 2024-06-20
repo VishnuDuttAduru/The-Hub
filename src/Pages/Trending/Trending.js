@@ -11,14 +11,12 @@ const Trending = () => {
   const fetchTrending = async () => {
 
     const { data } = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.REACT_APP_API_KEY}&page=${page}`)
-    // console.log(data.results);
     setContent(data.results);
   }
   useEffect(() => {
     fetchTrending();
     // eslint-disable-next-line
   }, [page])
-  // console.log(content);
   return (
     <div>
       <h1 className='pageTitle'>Trending</h1>
